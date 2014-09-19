@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Client / poc-nodepusher-api</title>
+    <meta name="viewport" content="initial-scale=1">
+    <style></style>
+  </head>
+
+  <body>
+
+    <div id="message"></div>
+
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="http://127.0.0.1:3000/socket.io/socket.io.js"></script>
+    <script>
+      // io();
+      var socket = io.connect('http://127.0.0.1:3000');
+
+      socket.on('demo_default', function(obj) 
+      {
+        // Get and show agnostic object
+        $('#message').html(JSON.stringify(obj));
+        console.log(obj);
+      });
+    </script>
+
+  </body>
+</html>

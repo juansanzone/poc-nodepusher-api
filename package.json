@@ -1,0 +1,10 @@
+{
+  "name": "poc-nodepusher-api",
+  "version": "0.0.1",
+  "description": "POC of NodeJS API to delivery agnostics objects by socket.io",
+  "dependencies": {
+    "express": "~4.7.2",
+    "socket.io": "~1.0.6",
+    "body-parser": "~1.8.2"
+  }
+}
